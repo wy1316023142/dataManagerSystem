@@ -1,0 +1,191 @@
+*{padding: 0;margin: 0}
+a{text-decoration: none}
+ul li{list-style: none}
+.text_r{  text-align: right;  }
+.flex{  display: flex;  align-items: center;  align-content: center;  }
+.flexItem{  flex: 1;  }
+.center{text-align: center}
+.mt10{margin-top: 10px}
+.mt20{margin-top: 20px}
+.ml10{margin-left: 10px}
+body {
+  font-family: "PingFang SC";
+}
+#app{
+  font-size: 14px;
+}
+.el-message{
+  i{
+    font-size: 14px;
+  }
+}
+.hdp-container{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  min-width: 1280px;
+  min-height: 720px;
+  background:url("../image/common/bg.png") no-repeat  ;
+  background-size: cover;
+  .hdp-header{
+    width: 100%;
+    height: 2.1rem;
+    position: relative;
+    .hdp-header-logo{
+      position: absolute;
+      left: 50%;
+      top:50%;
+      width: 2.51rem;
+      height: 1rem;
+      transform:translate(-50%,-50%)
+    }
+    .info{
+      vertical-align: middle;
+      float: right;
+      .equipmentInfo{
+        display: inline-block;
+        color: #EEEFF0;
+        font-size: 0.13rem;
+        span{
+          font-family: 'PangMenZhengDao';
+          font-size: 0.4rem
+        }
+      }
+      .userInfo{
+        display: inline-block;
+        color: #fff;
+        font-size: 0.13rem;
+        margin-left: 0.58rem;
+      }
+    }
+    .userImage{
+      width: 0.4rem;
+      height: 0.4rem;
+      margin-left: 0.07rem;
+      padding-right: 0.37rem;
+      vertical-align: middle;
+      img{
+        display: block;
+        width: 0.4rem;
+        height: 0.4rem;
+        vertical-align: middle;
+      }
+
+    }
+  }
+  .hdp-content{
+    width: 100%;
+    position: relative;
+    height:calc(100% - 2.1rem);
+    .hdp-side{
+      position: absolute;
+      left: 0;
+      top:0;
+      box-sizing: border-box;
+      width: 249px;
+      height: 100%;
+      text-align: center;
+      color: #ffffff;
+      .menu-icon{
+        width: 58px;
+        height: 58px;
+        line-height: 58px;
+        box-sizing: border-box;
+        padding-left: 85px;
+        margin-left: 41px;
+        background: url("../image/common/1.png") no-repeat ;
+        background-size: contain;
+        font-family: 'TT0142M_';
+        font-size: 18px;
+      }
+      .timeline{
+        margin-top: 21px;
+        display: inline-block;
+        .timeline-item{
+          position: relative;
+          min-height: 50px;
+          &:last-child .timeline-item__tail{
+            display: none;
+          }
+          // &.active .timeline-item__wrapper{
+          //   color: #1B73D6;
+          // }
+          .timeline-item__tail {
+            position: absolute;
+            left: 4px;
+            height: 100%;
+            border-left: 1px solid #00A8FC;
+          }
+          .timeline-item__node{
+            position: absolute;
+            left: -1px;
+            width: 12px;
+            height: 12px;
+            background-color: #00A8FC;
+            border-radius: 50%;
+          }
+          .timeline-item__wrapper {
+            position: relative;
+            padding-left: 30px;
+            top: -5px;
+            font-size:16px;
+            color: #ffffff;
+            text-align: left;
+            span{
+              display: inline-block;
+              padding-left: 10px;
+              line-height: 1;
+            }
+          }
+        }
+      }
+      .exit{
+        position: absolute;
+        bottom: 43px;
+        text-align: left;
+        padding-left: 65px;
+        .exit-main{
+          display: flex;
+          font-size: 18px;
+          font-family: 'TT0142M_';
+          i{
+            font-weight: bold;
+          }
+        }
+        .time{
+          margin-top: 21px;
+          font-size: 14px;
+          font-family: PangMenZhengDao;
+          .text1{
+            color: #CFDAFF;
+          }
+          .text2{
+            color: #00A8FC;
+          }
+        }
+      }
+    }
+    .hdp-main{
+      position: absolute;
+      top:0;
+      left: 249px;
+      width:calc(100% - 249px);
+      height: calc(100% - 41px);
+      box-sizing: border-box;
+      padding-right: 36px;
+      .hdp-main-content{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+
+}
+
+
+
+
+
