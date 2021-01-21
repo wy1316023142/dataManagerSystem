@@ -19,7 +19,7 @@
     "moment": "^2.24.0",
     "mysql": "^2.17.1",
     "ol": "^6.1.1",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.4.0",
     "sockjs-client": "^1.3.0",
     "stompjs": "^2.3.3",
     "video.js": "5.20.1",
